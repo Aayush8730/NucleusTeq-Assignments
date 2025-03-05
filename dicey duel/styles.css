@@ -1,0 +1,167 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #d8a1c4;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #4b0082;
+}
+
+.navbar h1 {
+  margin-bottom: 10px;
+  color: #4b0082;
+}
+
+.navbar div {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.navbar input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #4b0082;
+}
+
+.container {
+  max-width: 1000px;
+  min-height: 500px;
+  margin: auto;
+  padding: 0px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  color: #3e1f47;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player1 {
+  flex: 1;
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  text-align: center;
+  transition: 0.3s;
+  border: 3px solid #4b0082;
+  background: #d8a1c4;
+  border: 3px solid #ff69b4;
+  width: 100px;
+}
+
+.player2 {
+  flex: 1;
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  text-align: center;
+  transition: 0.3s;
+  border: 3px solid #4b0082;
+  background: #d8a1c4;
+  border: 3px solid #ff69b4;
+  width: 100px;
+}
+
+@media (max-width: 768px) {
+  .scoreboard {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .player {
+    width: 90%;
+  }
+
+  .container {
+    width: 95%;
+    min-height: 650px;
+  }
+}
+
+.player h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.player span {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+}
+
+button {
+  background: #a02c72;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #c9458e;
+}
+
+.reset {
+  background: #a02c72;
+}
+
+.reset:hover {
+  background: #a02c72;
+}
+
+.dice {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  margin: 5px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 0 10px purple;
+}
+
+.dice-dot {
+  --top: 0%;
+  --left: 0%;
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: var(--top);
+  left: var(--left);
+  transform: translateX(calc(var(--left) * -1)) translateY(calc(var(--top) * -1));
+  transition-delay: 1s;
+}
+
+.active1 {
+  background-color: greenyellow;
+}
+
+.active2 {
+  background-color: greenyellow;
+}
