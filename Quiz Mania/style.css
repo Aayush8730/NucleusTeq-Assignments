@@ -355,3 +355,17 @@ body {
   color: #2f3c7e;
   border-radius: 10px;
 }
+
+.reset{
+   padding: 10px;
+   background-color: #2f3c7e;
+   color: #fbeaeb;
+   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+   "Lucida Sans", Arial, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal;
+  border-radius: 3px;
+  font-weight: bolder;
+}
