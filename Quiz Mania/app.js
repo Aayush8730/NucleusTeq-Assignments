@@ -253,6 +253,9 @@ let wholeOptionsArray = []; // new option array for all the questions options
       option.style.pointerEvents = "auto";
     });
   }
+  document.querySelector(".reset").addEventListener("click",()=>{
+       window.location.reload();
+   })
 
 console.log(currentQuestionNumber);
 
