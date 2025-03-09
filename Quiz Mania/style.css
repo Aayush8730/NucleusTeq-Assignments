@@ -1,0 +1,357 @@
+body {
+  margin: 2px;
+  background-color: #fbeaeb;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  background-color: #2f3c7e;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 4px;
+  box-shadow: 0px 5px 18px #2f3c7e;
+}
+
+.nav-components {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-right: 20px;
+}
+.logo-name {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: #fbeaeb;
+  font-weight: bolder;
+  padding: 10px 10px 10px 10px;
+}
+.logo {
+  display: flex;
+  margin-left: 20px;
+  border: 2px solid #fbeaeb;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.logo:hover {
+  background-color: #364489;
+}
+#logoname1 {
+  background-color: #fbeaeb;
+  color: #2f3c7e;
+}
+
+.about {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: #fbeaeb;
+  font-weight: bolder;
+  border: 2px solid #fbeaeb;
+  padding: 10px 10px 10px 10px;
+  cursor: pointer;
+}
+.user-details {
+  display: flex;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: #fbeaeb;
+  font-weight: bolder;
+  /* border: 2px solid #FBEAEB ; */
+  padding: 0px;
+}
+
+#name-input {
+  color: #2f3c7e;
+  border: 2px solid #fbeaeb;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bolder;
+  font-size: medium;
+  width: 150px;
+  padding: 4px;
+  text-align: center;
+}
+#username {
+  border: 2px solid #fbeaeb;
+  padding: 10px 10px 10px 10px;
+}
+
+.main-container {
+  display: flex;
+  height: 100vh;
+}
+
+.left-half {
+  flex: 1;
+}
+
+.right-half {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  align-items: center;
+}
+.content {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal;
+  color: #2f3c7e;
+  padding: 50px;
+  padding-bottom: 0px;
+}
+#animation {
+  font-size: larger;
+}
+
+.image-container {
+  background-color: #2f3c7e;
+  margin-left: 50px;
+  border-radius: 5px;
+}
+.images {
+  padding: 3px 3px 0px 3px;
+  width: 50vw;
+  height: 400px;
+}
+
+.settings {
+  color: #2f3c7e;
+  border: 2px solid #2f3c7e;
+  padding: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bolder;
+  margin-top: 100px;
+}
+#category-label {
+  color: #2f3c7e;
+  font-size: 20px;
+  padding: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bolder;
+}
+#difficulty-label {
+  color: #2f3c7e;
+  font-size: 20px;
+  padding: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bolder;
+}
+
+.dropdown {
+  color: #2f3c7e;
+  font-size: 20px;
+  padding: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bolder;
+  border: 2px solid #2f3c7e;
+}
+
+.start-button {
+  color: #fbeaeb;
+  background-color: #2f3c7e;
+  font-size: 20px;
+  padding: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bolder;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.start-button:hover {
+  box-shadow: 0px 0px 10px #2f3c7e;
+}
+
+.about-button {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: #fbeaeb;
+  font-weight: bolder;
+  font-size: medium;
+  padding: 10px 10px 10px 10px;
+  background-color: #2f3c7e;
+  border: 2px solid #fbeaeb;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.about-button:hover {
+  background-color: #364489;
+}
+.about {
+  display: none;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 80%;
+  margin: 30px auto;
+  color: #2f3c7e;
+  cursor: text;
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal;
+  color: #2f3c7e;
+}
+
+.quiz-box {
+  display: none;
+  flex-direction: column;
+}
+.holder {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  background-color: #2f3c7e;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  width: 50%;
+  height: 50vh;
+  margin: 50px auto;
+  color: #fbeaeb;
+  border: 2px solid #fbeaeb;
+}
+.question-timer-div {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+#question {
+  flex: 7;
+  padding: 10px;
+  border: 2px solid #fbeaeb;
+  margin-right: 10px;
+  border-radius: 3px;
+  background-color: #fbeaeb;
+  color: #2f3c7e;
+  font-size: larger;
+  font-weight: bolder;
+}
+#timer {
+  flex: 1;
+  padding: 30px 20px 20px 20px;
+  border: 2px solid #fbeaeb;
+  border-radius: 3px;
+  background-color: #fbeaeb;
+  color: #2f3c7e;
+  text-align: center;
+  font-size: larger;
+  font-weight: bolder;
+}
+.option-div {
+  flex: 3;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  flex-direction: column;
+}
+.option {
+  display: flex;
+  border: 2px solid #fbeaeb;
+  padding: 10px 10px 10px 5px;
+  border-radius: 3px;
+  align-items: center;
+  transition: 0.3;
+  font-size: larger;
+  font-weight: bolder;
+}
+.option:hover {
+  background-color: rgba(54, 68, 137, 0.1);
+  box-shadow: 0px 0px 10px #fbeaeb;
+}
+
+.option-label {
+  padding: 5px 10px 5px 10px;
+  border-radius: 50%;
+  border: 2px solid #fbeaeb;
+  background-color: #fbeaeb;
+  color: #2f3c7e;
+  margin-right: 10px;
+}
+.next {
+  color: #fbeaeb;
+  background-color: #2f3c7e;
+  font-size: large;
+  padding: 15px 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 20px auto;
+  text-align: center;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.next:hover {
+  box-shadow: 0px 0px 10px #2f3c7e;
+}
+.score {
+  text-align: center;
+  margin: 20px auto; /* Centers it horizontally */
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 2px solid #2f3c7e;
+  width: fit-content;
+  font-weight: bolder;
+  font-size: large;
+}
+.score-value {
+  background-color: #2f3c7e;
+  color: #fbeaeb;
+  padding: 10px 20px 10px 20px;
+}
+.messageBox {
+  display: none;
+  position: fixed;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color:#2f3c7e;
+  border: 2px solid #fbeaeb;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  z-index: 1000;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: #fbeaeb;
+  font-weight: bolder;
+  font-size: large;
+  box-shadow: 0px 0px 10px #fbeaeb;
+}
+
+.winner-container{
+  display: none;
+}
+
+.winner-box {
+  margin: 50px auto;
+  padding: 20px;
+  width: 50%;
+  background-color:#FBEAEB; /* Dark blue *//* Light pink text */
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal;
+  color: #2f3c7e;
+  border-radius: 10px;
+}

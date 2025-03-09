@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Mania</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Oleo+Script:wght@400;700&family=Permanent+Marker&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- temporary message box -->
+    <div class="messageBox"></div>
+    <!-- creating a navbar -->
+    <div class="navbar">
+      <div class="logo" onclick="backToHome()">
+        <div class="logo-name" id="logoname1">Quiz</div>
+        <div class="logo-name" id="logoname2">Mania</div>
+      </div>
+
+      <div class="nav-components">
+        <button class="about-button" onclick="displayAbout()">About</button>
+        <div class="user-details">
+          <!-- <img src="user-removebg-preview.png" id="logo-user" alt=""> -->
+          <div id="username">User Name :</div>
+          <input type="text" id="name-input" placeholder="Enter Name Here.. " />
+        </div>
+      </div>
+    </div>
+    <!-- below the navbar on the landing page -->
+    <div class="main-container">
+      <div class="left-half">
+        <div class="content">
+          <h2>
+            Choose your challenge and test your skills! Explore exciting
+            categories and conquer difficulty levels, from beginner to expert.
+            <label for="animation" id="animation">Ready to play?</label>
+          </h2>
+        </div>
+
+        <div class="image-container">
+          <img src="/Quiz Mania/images/everthing.jpg" alt="knowledge" class="images" />
+        </div>
+      </div>
+      <div class="right-half">
+        <h2 class="settings">Quiz Settings ⚙️</h2>
+        <div class="category">
+          <label for="categories" id="category-label">Select Category:</label>
+          <select id="category-types" class="dropdown">
+            <option value="Category" selected disabled>Category</option>
+            <option value="28">Vehicles 🚘</option>
+            <option value="27">Animals 🦁</option>
+            <option value="22">Geography 🌍</option>
+            <option value="21">Sports ⚽️</option>
+            <option value="9">General knowledge 📚</option>
+          </select>
+        </div>
+        <div class="difficulty">
+          <label for="difficulty" id="difficulty-label"
+            >Select Difficulty:</label
+          >
+          <select id="difficulty-types" class="dropdown">
+            <option value="Difficulty" selected disabled>Difficulty</option>
+            <option value="easy">Easy 😀</option>
+            <option value="medium">Medium 🙂</option>
+            <option value="hard">Hard 🙁</option>
+          </select>
+        </div>
+        <div class="start-button" onclick="startGame()">Start Game</div>
+      </div>
+    </div>
+    <!-- creating the about page -->
+    <div class="about">
+      <header>
+        <h1>About Quiz Mania</h1>
+      </header>
+
+      <section class="about">
+        <h2>Welcome to Quiz Mania! 🎉</h2>
+        <p>
+          Quiz Mania is an interactive quiz platform that challenges your
+          knowledge across various topics. Choose your difficulty level and dive
+          into exciting quizzes!
+        </p>
+      </section>
+      <section class="rules">
+        <h2>⏳ Quiz Rules & Scoring</h2>
+        <ul>
+          <li>Each question has a **15-second** time limit.</li>
+          <li>
+            If you don’t answer within **15 seconds**, the question is skipped.
+          </li>
+          <li>You earn **1 point** for each correct answer.</li>
+          <li>Your total score is updated after each correct response.</li>
+          <li>Try to get the highest score and test your knowledge!</li>
+        </ul>
+      </section>
+      <section class="difficulty">
+        <h2>🎯 Difficulty Levels</h2>
+        <ul>
+          <li><strong>Easy:</strong> Basic questions for beginners.</li>
+          <li><strong>Medium:</strong> A mix of tricky and fun questions.</li>
+          <li>
+            <strong>Hard:</strong> For quiz masters looking for a challenge!
+          </li>
+        </ul>
+      </section>
+
+      <section class="categories">
+        <h2>📚 Quiz Categories</h2>
+        <p>Test your knowledge in different areas:</p>
+        <ul>
+          <li>🐾 Animals</li>
+          <li>🚘 Vehicles</li>
+          <li>🌍 Geography</li>
+          <li>⚽ Sports</li>
+          <li>🧠 General Knowledge</li>
+        </ul>
+      </section>
+
+      <section class="source">
+        <h2>🔗 Data Source</h2>
+        <p>
+          Our questions are fetched dynamically from the
+          <a href="https://opentdb.com/" target="_blank"
+            >Open Trivia Database (OTDB)</a
+          >.
+        </p>
+      </section>
+    </div>
+    <!-- create quiz-box -->
+    <div class="quiz-box">
+      <div class="score">
+        Score
+        <span class="score-value">0</span>
+      </div>
+      <div class="holder">
+        <div class="question-timer-div">
+          <div id="question">Question will be displayed here</div>
+          <div id="timer">15</div>
+        </div>
+        <div class="option-div">
+          <div class="option" id="0">Option A</div>
+          <div class="option" id="1">Option B</div>
+          <div class="option" id="2">Option 3</div>
+          <div class="option" id="3">Option 4</div>
+        </div>
+      </div>
+      <button class="next" onclick="nextQuestion()">Next question</button>
+    </div>
+    <!-- Winners Page (Hidden Initially) -->
+
+    <div id="winnerSection" class="winner-container">
+      <div class="winner-box">
+        <h1>Congratulations!</h1>
+        <h2>Your Score: <span class="winner-score">0</span></h2>
+         <p>Go back to Quiz Mania and try some more "exciting" categories.!!! I challenge you to try difficulty level "hard"</p> 
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

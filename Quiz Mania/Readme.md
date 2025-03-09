@@ -1,0 +1,1 @@
+## #2F3C7E, #FBEAEB // hex codes for the colors used 
