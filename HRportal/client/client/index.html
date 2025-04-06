@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HR Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-logo">HR Portal</div>
+  </nav>
+
+  <div class="login-container">
+    <h1>Login</h1>
+    <form id="loginForm">
+      <input type="email" id="email" placeholder="example@gmail.com" required />
+      <input type="password" id="password" placeholder="********" required />
+      <button type="submit">Login</button>
+      <div class="error-message" id="error"></div>
+    </form>
+  </div>
+
+  <div class="portal-container" id="portalPage">
+    <div class="container">
+      <table class="employee-table" id="employeeTable">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Email</th>
+            <th>Salary</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <div class="form-container">
+        <h2>Add / Edit Employee</h2>
+        <form id="employeeForm">
+          <input type="hidden" id="employeeId" />
+          <input type="text" id="name" placeholder="Name" required />
+          <input type="text" id="department" placeholder="Department" required />
+          <input type="email" id="empEmail" placeholder="Email" required />
+          <input type="number" id="salary" placeholder="Salary" required />
+          <button type="submit">Save Employee</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
